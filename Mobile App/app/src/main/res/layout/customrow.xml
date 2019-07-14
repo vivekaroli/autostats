@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Num"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="5dp"
+        android:id="@+id/vehiclen"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fine Type"
+        android:layout_centerVertical="true"
+       android:layout_toRightOf="@+id/vehiclen"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/finety"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fine Type"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/finety"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/fineamount"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/fineamount"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/finedate"/>
+</RelativeLayout>
+

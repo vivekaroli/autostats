@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="management.data.vehicle.app.com.vehicledatamanagement.UserActivity">
+
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/personalbutton"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/personaldetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/accordionbutton"
+                android:textColor="#fff"
+                android:layout_marginRight="20dp"
+                android:text="User Details" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/searchresult"
+            android:visibility="gone"
+            android:layout_below="@+id/personalbutton">
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+
+                    android:textAlignment="textStart">
+                    <RelativeLayout
+                        android:id="@+id/vehicletyplayoutshow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Vehicle Type"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/vehicletypshow"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/black"
+                            android:text="Ve"
+                            android:gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/vehiclelayoutshow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vehicletyplayoutshow"
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Vehicle Number"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/vehiclenumshow"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/black"
+                            android:text="RC Name"
+                            android:gravity="center_vertical"
+                            />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/RCnamelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vehiclelayoutshow"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="RC Name"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/rcname"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:text="RC Name"
+
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/addr1layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/RCnamelayout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Address 1"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/addr1"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/addr2layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addr1layout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Address 2"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/addr2"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/distlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addr2layout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="District"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/distname"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentRight="true"
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/statelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/distlayout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="State"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/statename"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/countrylayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/statelayout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Country"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/countryname"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:inputType="text"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/pinlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/countrylayout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Pin Code"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/pinnum"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/phnelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pinlayout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Phone Number"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/phnenum"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:inputType="number"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/emllayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phnelayout"
+
+                        android:padding="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:text="Email Id"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/emailid"
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+
+                            android:gravity="center_vertical"
+                            android:textColor="@color/black"
+                            android:visibility="visible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addfinebutton"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/searchresult">
+            <Button
+                android:id="@+id/finedetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/accordionbutton"
+                android:textColor="#fff"
+                android:layout_marginRight="20dp"
+                android:text="Fine Details" />
+        </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/addfinebutton"></ListView>-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/vehicledet">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/vehnum"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="KL 12 D 1222"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/vehtyp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/vehnum"
+        android:textStyle="bold"
+        android:text="2 Wheeler"/>
+</RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/vehicledet"
+        android:id="@+id/tabletopbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:id="@+id/finedate"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Fine Date"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Vehicle No."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Fine Type"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Fine Charge"/>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tabletopbar"></ListView>
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+

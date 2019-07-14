@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicletype_array">
+        <item>2 Wheeler</item>
+        <item>3 Wheeler</item>
+        <item>Light Motor Vehicle</item>
+        <item>Heavy Motor Vehicle</item>
+    </string-array>
+</resources>

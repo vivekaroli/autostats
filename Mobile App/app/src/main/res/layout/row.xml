@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+<RelativeLayout
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/lefttop">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle No :"
+            android:id="@+id/vehnumtext"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KL 59 D 7877"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/vehiclenumdata"
+            android:layout_toRightOf="@+id/vehnumtext"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lefttop">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Type :"
+            android:id="@+id/owner"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/vehicleownername"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/owner"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/righttop">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fine Type :"
+                android:id="@+id/finetypelabel"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fine"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/finetypedata"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/finetypelabel"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/righttop">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charge :Rs"
+                android:id="@+id/chargelabel"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="charge"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/finechargelabel"
+                android:layout_toRightOf="@+id/chargelabel"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

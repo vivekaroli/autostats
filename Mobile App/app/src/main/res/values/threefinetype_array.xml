@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="threefinetype_array">
+        <item>Parking Fine</item>
+        <item>Traffic Fine</item>
+        <item>Over speed</item>
+    </string-array>
+</resources>
